@@ -10,122 +10,74 @@ namespace ConsolePlanner
 {
     public interface IPlannerBl
     {
-        void AddEvent();
-        void DeletEvent();
-        void ShowPlans();
-        
+        void AddEvent(PlanTask plan);
+        void DeletEvent(PlanTask plan);
+        List<PlanTask> GetPlans();
+        void SavePlans();     
     }
    class PlannerBL : IPlannerBl
     {
         
-        private string Days { get; set; }
+        private List<PlanTask> PlanList { get; set; }
 
-        List<string> days = new List<string> { "ПН:", "ВТ:", "СР:", "ЧТ:", "ПТ:", "СБ:", "ВС:" };
+        private const string PATH = "C:/Users/oleg/Documents/Visual Studio 2015/Projects/ FilePlanner.txt";
 
         public PlannerBL()
         {
-            
+            PlanList = new List<PlanTask>();
+            PlanTask plan = new PlanTask();
+            plan.TaskName = "Today is";
+            plan.TaskData = DateTime.Now;
+            PlanList.Add(plan);
+            SavePlans();                      
         }
-        public void AddEvent()
-        {
-                Console.WriteLine("Введите день события!(ПН,ВТ,СР,ЧТ,ПТ,СБ,ВС)\n  Для выхода в главное меню нажмите - E\n");
 
-                string d = Console.ReadLine();
-            switch (d)
+        public void AddEvent(PlanTask plan)
+        {
+            try
             {
-                case "ПН":
-                    Console.WriteLine("Введите текст события.");
-                    string p = Console.ReadLine();
-                    days.RemoveAt(0);
-                    days.Insert(0, p); 
-                    break;
-                case "ВТ":
-                    Console.WriteLine("Введите текст события");
-                    string v = Console.ReadLine();
-                    days.RemoveAt(1);
-                    days.Insert(1, v);
-                    break;
-                case "СР":
-                    Console.WriteLine("Введите текст события");
-                    string cp = Console.ReadLine();
-                    days.RemoveAt(2);
-                    days.Insert(2, cp);
-                    break;
-                case "ЧТ":
-                    Console.WriteLine("Введите текст события");
-                    string ch = Console.ReadLine();
-                    days.RemoveAt(3);
-                    days.Insert(3, ch);
-                    break;
-                case "ПТ":
-                    Console.WriteLine("Введите текст события");
-                    string pt = Console.ReadLine();
-                    days.RemoveAt(4);
-                    days.Insert(4, pt);
-                    break;
-                case "СБ":
-                    Console.WriteLine("Введите текст события");
-                    string s = Console.ReadLine();
-                    days.RemoveAt(5);
-                    days.Insert(5, s);
-                    break;
-                case "ВС":
-                    Console.WriteLine("Введите текст события");
-                    string vs = Console.ReadLine();
-                    days.RemoveAt(6);
-                    days.Insert(6, vs);
-                    break;
-                case "E":
-                    break;
+                Console.WriteLine("Write plan!(format: № - text.)");
+                plan.TaskName = Console.ReadLine();
+                Console.WriteLine("Write date!(format: yyyy-mm-dd  hh:mm:ss)");
+                plan.TaskData = Convert.ToDateTime(Console.ReadLine());
+                PlanList.Add(plan);
+                SavePlans();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Follow Menu Format!");
+            }
+        }
+        public void DeletEvent(PlanTask plan)
+        {
+            try
+            {
+                var plans = MySaver.ReadFromJsonFile<List<PlanTask>>(PATH);
+
+                foreach (var el in plans)
+                {
+                    Console.WriteLine("Task: {0}, Data: {1}", el.TaskName, el.TaskData);
+                    Console.WriteLine();
                 }
-            
-            Console.Clear();
-            
+                Console.WriteLine("Write Number of Task you want remove!");
+                int name = Convert.ToInt32(Console.ReadLine());
+                PlanList.RemoveAt(name);
+                SavePlans();
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                Console.WriteLine("Not correct number of Task!");
+            }
+        }
+        public List<PlanTask> GetPlans()
+        {
+            PlanList=MySaver.ReadFromJsonFile<List<PlanTask>>(PATH);
+            return PlanList;
+        }
 
-        }
-        public void DeletEvent()
+        public void SavePlans()
         {
-            Console.WriteLine("Введите день события,которое нужно удалить!(ПН,ВТ,СР,ЧТ,ПТ,СБ,ВС)\nДля выхода в главное меню нажмите - E\n");
-            string d = Console.ReadLine();
-            switch (d)
-            {
-                case "ПН":
-                    days.RemoveAt(0);
-                    break;
-                case "ВТ":
-                    days.RemoveAt(1);
-                    break;
-                case "СР":
-                    days.RemoveAt(2);
-                    break;
-                case "ЧТ":
-                    days.RemoveAt(3);
-                    break;
-                case "ПТ":
-                    days.RemoveAt(4);
-                    break;
-                case "СБ":
-                    days.RemoveAt(5);
-                    break;
-                case "ВС":
-                    days.RemoveAt(6);
-                    break;
-                case "E":
-                    break;          
-            }
-            
-        }
-        public void ShowPlans()
-        {
-            FileStream file = new FileStream("C:/Users/oleg/Documents/Visual Studio 2015/Projects/ FilePlanner.txt", FileMode.OpenOrCreate);
-            StreamWriter writer = new StreamWriter(file);
-            foreach (string el in days)
-            {
-                writer.WriteLine(el);
-                Console.WriteLine(el);
-            }
-            writer.Close();
-           
+            MySaver.WriteToJsonFile(PATH, PlanList);
         }
     }
 }
