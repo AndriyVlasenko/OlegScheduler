@@ -40,6 +40,13 @@ namespace ConsolePlanner
                 plan.TaskName = Console.ReadLine();
                 Console.WriteLine("Write date!(format: yyyy-mm-dd  hh:mm:ss)");
                 plan.TaskData = Convert.ToDateTime(Console.ReadLine());
+               /* string dateString = Console.ReadLine();
+                DateTime dateValue;
+                if (DateTime.TryParse(dateString, out dateValue))
+                {
+                    plan.TaskData = dateValue;
+                } 
+                */              
                 PlanList.Add(plan);
                 SavePlans();
             }
