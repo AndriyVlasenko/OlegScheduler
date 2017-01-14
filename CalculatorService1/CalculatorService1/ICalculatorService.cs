@@ -12,6 +12,6 @@ namespace CalculatorService1
     public interface ICalculatorService
     {
         [OperationContract]
-        void DoWork();
+        double AddDouble(double a, double b);
     }
 }
