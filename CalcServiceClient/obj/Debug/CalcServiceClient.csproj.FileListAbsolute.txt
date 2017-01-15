@@ -1,9 +1,0 @@
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\bin\Debug\CalcServiceClient.exe.config
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\bin\Debug\CalcServiceClient.exe
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\bin\Debug\CalcServiceClient.pdb
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\obj\Debug\CalcServiceClient.csprojResolveAssemblyReference.cache
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\obj\Debug\CalcServiceClient.Form1.resources
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\obj\Debug\CalcServiceClient.Properties.Resources.resources
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\obj\Debug\CalcServiceClient.csproj.GenerateResource.Cache
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\obj\Debug\CalcServiceClient.exe
-C:\Users\oleg\Documents\Visual Studio 2015\Projects\CalculatorService1\CalcServiceClient\obj\Debug\CalcServiceClient.pdb
