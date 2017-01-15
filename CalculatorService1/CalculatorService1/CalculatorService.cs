@@ -13,6 +13,7 @@ namespace CalculatorService1
     {
         public double AddDouble(double a, double b)
         {
+            Console.WriteLine(string.Format("adding a+b, {0},{1}",a,b));
             return a + b;
         }
     }

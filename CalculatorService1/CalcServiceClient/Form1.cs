@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalcServiceClient.CalculatorReference;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +24,9 @@ namespace CalcServiceClient
             double a = double.Parse(textBox1.Text);
             double b = double.Parse(textBox2.Text);
 
-            double result = a + b;
+            CalculatorServiceClient client = new CalculatorServiceClient();
+            double result = client.AddDouble(a,b);
+
             textBox3.Text = ""+result;
 
         }
