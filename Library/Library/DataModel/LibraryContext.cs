@@ -6,14 +6,14 @@ namespace Library.DataModel
 
     public class LibraryContext : DbContext
     {
-       
         public LibraryContext()
-            : base("name=LibraryContext")
+            : base("name=LibraryContext1")
         {
         }
 
-        public DbSet<Book> Books { get; set; }
+
+         public DbSet<Book> Books { get; set; }
     }
 
-   
+    
 }
