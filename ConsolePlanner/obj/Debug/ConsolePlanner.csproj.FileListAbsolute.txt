@@ -1,0 +1,23 @@
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\bin\Debug\ConsolePlanner.exe.config
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\bin\Debug\ConsolePlanner.exe
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\bin\Debug\ConsolePlanner.pdb
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\obj\Debug\ConsolePlanner.exe
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\obj\Debug\ConsolePlanner.pdb
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\obj\Debug\ConsolePlanner.csprojResolveAssemblyReference.cache
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\bin\Debug\Newtonsoft.Json.dll
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner\ConsolePlanner\bin\Debug\Newtonsoft.Json.xml
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\ConsolePlanner.exe.config
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\obj\Debug\ConsolePlanner.exe
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\obj\Debug\ConsolePlanner.pdb
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\ConsolePlanner.exe
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\ConsolePlanner.pdb
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\EntityFramework.dll
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\Newtonsoft.Json.dll
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\EntityFramework.xml
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\bin\Debug\Newtonsoft.Json.xml
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\obj\Debug\ConsolePlanner.csprojResolveAssemblyReference.cache
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\obj\Debug\ConsolePlanner.Migrations.InitialCreate.resources
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\obj\Debug\ConsolePlanner.csproj.GenerateResource.Cache
+C:\Users\oleg\Documents\Visual Studio 2015\Projects\ConsolePlanner _DataBase\ConsolePlanner\obj\Debug\ConsolePlanner.PlannerForm.resources

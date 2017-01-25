@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
+using ConsolePlanner.DataModel;
 
 namespace ConsolePlanner
 {
+
     public interface IPlannerBl
     {
         void AddEvent(PlanTask plan);
         void DeletEvent(PlanTask plan);
         List<PlanTask> GetPlans();
-        void SavePlans();     
+        void SavePlans();
     }
-   class PlannerBL : IPlannerBl
+    class PlannerBL : IPlannerBl
     {
-        
+
         private List<PlanTask> PlanList { get; set; }
 
         private const string PATH = "C:/Users/oleg/Documents/Visual Studio 2015/Projects/ FilePlanner.txt";
@@ -28,8 +29,8 @@ namespace ConsolePlanner
             PlanTask plan = new PlanTask();
             plan.TaskName = "Today is";
             plan.TaskData = DateTime.Now;
-            PlanList.Add(plan);
-            SavePlans();                      
+            // PlanList.Add(plan);
+            // SavePlans();                      
         }
 
         public void AddEvent(PlanTask plan)
@@ -40,13 +41,14 @@ namespace ConsolePlanner
                 plan.TaskName = Console.ReadLine();
                 Console.WriteLine("Write date!(format: yyyy-mm-dd  hh:mm:ss)");
                 plan.TaskData = Convert.ToDateTime(Console.ReadLine());
-               /* string dateString = Console.ReadLine();
-                DateTime dateValue;
-                if (DateTime.TryParse(dateString, out dateValue))
-                {
-                    plan.TaskData = dateValue;
-                } 
-                */              
+                // Альтернативный вариан кода для добавления даты.
+                /* string dateString = Console.ReadLine();
+                 DateTime dateValue;
+                 if (DateTime.TryParse(dateString, out dateValue))
+                 {
+                     plan.TaskData = dateValue;
+                 } 
+                 */
                 PlanList.Add(plan);
                 SavePlans();
             }
@@ -67,8 +69,13 @@ namespace ConsolePlanner
                     Console.WriteLine();
                 }
                 Console.WriteLine("Write Number of Task you want remove!");
-                int name = Convert.ToInt32(Console.ReadLine());
-                PlanList.RemoveAt(name);
+                int num= Convert.ToInt32(Console.ReadLine());
+                PlanList.RemoveAt(num-1);
+                //Вариант удаления из БД.
+                /*
+                plan.PlanTaskID= Convert.ToInt32(Console.ReadLine());
+                PlanList.RemoveAt(plan.PlanTaskID-1);
+                */
                 SavePlans();
             }
             catch (ArgumentOutOfRangeException)
@@ -78,7 +85,7 @@ namespace ConsolePlanner
         }
         public List<PlanTask> GetPlans()
         {
-            PlanList=MySaver.ReadFromJsonFile<List<PlanTask>>(PATH);
+            PlanList = MySaver.ReadFromJsonFile<List<PlanTask>>(PATH);
             return PlanList;
         }
 

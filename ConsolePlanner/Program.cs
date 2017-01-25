@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Threading;
+using ConsolePlanner.DataModel;
 
 namespace ConsolePlanner
 {
@@ -12,7 +13,6 @@ namespace ConsolePlanner
     {
         static void Main()
         {
-
             Planner = new PlannerBL();
            
             Menu();
@@ -38,16 +38,30 @@ namespace ConsolePlanner
             }
             else if (a == 2)
             {
-                var plans =new PlanTask();
-                Planner.AddEvent(plans);
-
-                Menu();
+                using (PlannerContext context = new PlannerContext())
+                {
+                    var plans = new PlanTask();
+                    Planner.AddEvent(plans);
+                    context.PlanListData.Add(plans);
+                    context.SaveChanges();
+                    Menu();
+                }
             }
             else if (a == 3)
             {
-                var plans = new PlanTask();
-                Planner.DeletEvent(plans);
-                Menu();
+                using (PlannerContext context = new PlannerContext())
+                {
+                    var plans = new PlanTask();
+                    Planner.DeletEvent(plans);
+
+                    //Вариант удаления из БД.
+                    /*
+                    context.PlanListData.Attach(plans);
+                    context.PlanListData.Remove(plans);
+                    context.SaveChanges();
+                   */
+                    Menu();
+                }
             }
             else if (a == 4)
             {
@@ -62,5 +76,6 @@ namespace ConsolePlanner
                 Menu();
             }
         }
+
     }
 }
