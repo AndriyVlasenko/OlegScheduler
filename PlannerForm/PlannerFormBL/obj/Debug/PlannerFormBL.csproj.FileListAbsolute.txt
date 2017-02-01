@@ -1,0 +1,10 @@
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\PlannerFormBL.dll.config
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\PlannerFormBL.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\PlannerFormBL.pdb
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\EntityFramework.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\EntityFramework.SqlServer.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\EntityFramework.xml
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\bin\Debug\EntityFramework.SqlServer.xml
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\obj\Debug\PlannerFormBL.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\obj\Debug\PlannerFormBL.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerFormBL\obj\Debug\PlannerFormBL.pdb

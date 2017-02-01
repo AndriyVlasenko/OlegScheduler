@@ -1,0 +1,17 @@
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\PlannerForm.exe.config
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\PlannerForm.exe
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\PlannerForm.pdb
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.FormEventAdd.resources
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.FormEventDel.resources
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.MainForm.resources
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.Properties.Resources.resources
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.csproj.GenerateResource.Cache
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.exe
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\obj\Debug\PlannerForm.pdb
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\EntityFramework.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\EntityFramework.SqlServer.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\PlannerFormBL.dll
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\PlannerFormBL.pdb
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\EntityFramework.xml
+\\mac\home\documents\visual studio 2015\Projects\PlannerForm\PlannerForm\bin\Debug\EntityFramework.SqlServer.xml
